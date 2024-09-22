@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.audio-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #eaeaea;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.player-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.track {
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.track:hover {
+    background-color: #ccc;
+}
+
+.track-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  text-align: left;
+}
+
+.artist-photo {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.karaoke-carousel {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    color: #444;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#karaoke-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#karaoke-list li {
+    opacity: 0.5;
+    font-size: 18px;
+    transition: all 0.3s;
+    color: #888;
+}
+
+#karaoke-list li.current {
+    font-size: 28px;
+    color: #222;
+    opacity: 1;
+    font-weight: bold;
+}
+
+#karaoke-list li.previous, 
+#karaoke-list li.next {
+    font-size: 22px;
+    opacity: 0.8;
+}
+
+#karaoke-list li.hidden {
+    display: none;
+}
+
+.controls {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+audio {
+    width: 100%;
+}

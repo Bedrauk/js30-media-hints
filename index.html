@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="audio-player">
+    <div class="player-main">
+        <div class="playlist">
+            <button class="track" data-index="0">System of a Down - B.Y.O.B</button>
+            <button class="track" data-index="1">Nizkiz - Поворачивай</button>
+            <button class="track" data-index="2">Creepy Nuts - Bling-Bang-Bang-Born</button>
+            <button class="track" data-index="3">System of a Down - B.Y.O.B</button>
+            <button class="track" data-index="4">Nizkiz - Поворачивай</button>
+            <button class="track" data-index="5">Creepy Nuts - Bling-Bang-Bang-Born</button>
+            <button class="track" data-index="6">System of a Down - B.Y.O.B</button>
+            <button class="track" data-index="7">Nizkiz - Поворачивай</button>
+            <button class="track" data-index="8">Creepy Nuts - Bling-Bang-Bang-Born</button>
+        </div>
+        <div class="track-details">
+
+            <img src="default-photo.jpg" alt="Band Photo" class="artist-photo" id="artist-photo">
+            <p id="track-description"></p>
+        </div>
+    </div>
+
+    <div class="controls">
+        <audio id="audio" src="default-audio.mp3" controls></audio>
+    </div>
+
+</div>
+
+<script src="player.js"></script>
+</body>
+</html>
