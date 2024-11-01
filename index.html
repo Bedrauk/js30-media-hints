@@ -20,6 +20,8 @@
             <button class="track" data-index="6">System of a Down - B.Y.O.B</button>
             <button class="track" data-index="7">Nizkiz - Поворачивай</button>
             <button class="track" data-index="8">Creepy Nuts - Bling-Bang-Bang-Born</button>
+            <button class="track" data-index="7">Nizkiz - Поворачивай</button>
+            <button class="track" data-index="8">Creepy Nuts - Bling-Bang-Bang-Born</button>
         </div>
         <div class="track-details">
 
@@ -29,7 +31,17 @@
     </div>
 
     <div class="controls">
-        <audio id="audio" src="default-audio.mp3" controls></audio>
+    <!-- Одна кнопка для воспроизведения и паузы -->
+    <button id="play-pause-btn">Play</button>
+
+    <!-- Таймлайн для перемотки трека -->
+    <input type="range" id="timeline" value="0" max="100">
+
+    <!-- Контроллер громкости -->
+    <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1" />
+
+    <!-- Аудио элемент -->
+    <audio id="audio" src="default-audio.mp3"></audio>
     </div>
 
 </div>
